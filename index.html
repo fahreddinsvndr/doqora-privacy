@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Doqora — Gizlilik Politikası</title>
+<style>
+  :root{
+    --ink:#1b1720; --muted:#5d5567; --line:#e6e0ec;
+    --accent:#8156C0; --bg:#ffffff; --panel:#faf8fc;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --ink:#ece8f0; --muted:#a79fb2; --line:#2e2836;
+           --accent:#b491e6; --bg:#141118; --panel:#1c1823; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:48px 24px 80px}
+  header{display:flex;align-items:center;gap:14px;margin-bottom:8px}
+  .mark{
+    width:46px;height:46px;border-radius:12px;background:var(--accent);
+    display:grid;place-items:center;flex:none;
+  }
+  .mark svg{display:block}
+  h1{font-size:1.65rem;line-height:1.25;margin:0;letter-spacing:-.02em}
+  .sub{color:var(--muted);font-size:.94rem;margin:2px 0 0}
+  .updated{color:var(--muted);font-size:.86rem;margin:22px 0 30px}
+  h2{font-size:1.1rem;margin:34px 0 10px;letter-spacing:-.01em}
+  p{margin:0 0 12px}
+  ul{margin:0 0 12px;padding-left:20px}
+  li{margin:0 0 7px}
+  .lede{
+    background:var(--panel);border:1px solid var(--line);border-radius:12px;
+    padding:16px 18px;margin:0 0 8px;
+  }
+  .lede p:last-child{margin-bottom:0}
+  table{border-collapse:collapse;width:100%;margin:0 0 14px;font-size:.93rem}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-weight:600;color:var(--muted);font-size:.82rem;text-transform:uppercase;letter-spacing:.04em}
+  a{color:var(--accent)}
+  code{background:var(--panel);border:1px solid var(--line);border-radius:5px;padding:1px 5px;font-size:.88em}
+  footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}
+  .en{margin-top:64px;padding-top:28px;border-top:2px solid var(--line)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="mark" aria-hidden="true">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M5 2h9l5 5v15H5z" fill="#fff"/>
+        <path d="M14 2l5 5h-5z" fill="#d9c8ee"/>
+        <rect x="8" y="11" width="8" height="1.6" rx=".8" fill="#8156C0"/>
+        <rect x="8" y="14.4" width="8" height="1.6" rx=".8" fill="#8156C0"/>
+        <rect x="8" y="17.8" width="5" height="1.6" rx=".8" fill="#8156C0"/>
+      </svg>
+    </div>
+    <div>
+      <h1>Doqora — Gizlilik Politikası</h1>
+      <p class="sub">PDF görüntüleme, doldurma, imzalama ve tarama uygulaması</p>
+    </div>
+  </header>
+
+  <p class="updated">Son güncelleme: 25 Ağustos 2026</p>
+
+  <div class="lede">
+    <p><strong>Kısaca:</strong> Doqora belgelerinizi sunucularımıza yüklemez. Açtığınız PDF'ler, taradığınız
+    sayfalar, doldurduğunuz formlar, attığınız imzalar ve OCR ile çıkarılan metinler <strong>yalnızca
+    cihazınızda</strong> işlenir ve cihazınızda kalır. Doqora'nın belgelerinize erişen bir sunucusu yoktur.</p>
+  </div>
+
+  <h2>1. Cihazınızda kalan veriler</h2>
+  <p>Aşağıdakiler yalnızca telefonunuzun/tabletinizin yerel depolamasında tutulur ve hiçbir yere gönderilmez:</p>
+  <ul>
+    <li>Açtığınız, oluşturduğunuz veya düzenlediğiniz tüm PDF belgeleri</li>
+    <li>Kamerayla taradığınız görüntüler ve bunlardan üretilen PDF'ler</li>
+    <li>OCR (metin tanıma) sonuçları — metin tanıma tamamen cihaz üzerinde, Google ML Kit'in cihaza gömülü
+        modeliyle yapılır; görüntüleriniz metne dönüştürülmek için hiçbir sunucuya gönderilmez</li>
+    <li>Çizdiğiniz veya yazdığınız imzalar</li>
+    <li>Form alanlarına girdiğiniz metinler</li>
+    <li>Uygulama içinde bir belgeye koyduğunuz PIN — PIN'in kendisi saklanmaz; yalnızca geri döndürülemeyen
+        bir özeti (salt'lı SHA-256) cihazda tutulur</li>
+    <li>Son kullanılan dosyaların listesi, dil tercihiniz ve tema ayarınız</li>
+  </ul>
+  <p>Uygulamayı kaldırdığınızda bu yerel veriler de cihazınızdan silinir.</p>
+
+  <h2>2. Üçüncü taraf hizmetleri</h2>
+  <p>Doqora'nın kendisi veri toplamaz; ancak uygulama, reklam gösterimi ve satın alma doğrulaması için
+  aşağıdaki hizmetleri kullanır. Bu hizmetler kendi gizlilik politikaları kapsamında veri işler:</p>
+
+  <table>
+    <thead>
+      <tr><th>Hizmet</th><th>Amaç</th><th>İşlenen veriler</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Google AdMob</strong></td>
+        <td>Ücretsiz sürümde reklam gösterimi</td>
+        <td>Reklam kimliği (AAID/IDFA), cihaz ve işletim sistemi bilgisi, IP adresi ve ondan türetilen
+            yaklaşık konum, reklam gösterim/etkileşim olayları</td>
+      </tr>
+      <tr>
+        <td><strong>RevenueCat</strong></td>
+        <td>Abonelik ve satın alma doğrulaması</td>
+        <td>Anonim uygulama kullanıcı kimliği, satın alma ve abonelik durumu, ürün/fiyat bilgisi,
+            cihaz ve platform bilgisi</td>
+      </tr>
+      <tr>
+        <td><strong>Google Play Faturalandırma / App Store</strong></td>
+        <td>Ödemenin gerçekleştirilmesi</td>
+        <td>Ödeme işlemi ilgili mağaza tarafından yürütülür; Doqora kart bilgilerinizi görmez veya saklamaz</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>İlgili politikalar:
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Gizlilik Politikası</a> ·
+    <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Gizlilik Politikası</a>
+  </p>
+
+  <h2>3. İzinler ve neden isteniyor</h2>
+  <ul>
+    <li><strong>Kamera</strong> — yalnızca belge tarama ekranını kullandığınızda, kağıt belgeyi PDF'e
+        dönüştürmek için. Kamera görüntüleri hiçbir yere yüklenmez.</li>
+    <li><strong>Fotoğraflara ekleme (iOS)</strong> — yalnızca taradığınız belgeyi galerinize kaydetmek
+        istediğinizde.</li>
+    <li><strong>İnternet</strong> — reklam gösterimi ve satın alma doğrulaması için. Belgeleriniz için
+        kullanılmaz.</li>
+  </ul>
+  <p>Doqora cihazınızdaki diğer dosyaları taramaz; yalnızca sizin sistem dosya seçiciyle bilerek
+  seçtiğiniz belgelere ve kendi ürettiği dosyalara erişir.</p>
+
+  <h2>4. Bulut hizmetleri</h2>
+  <p>Uygulamadaki "Bulut Hesapları" ekranı yalnızca bilgilendirme amaçlıdır. Doqora, Google Drive,
+  Dropbox veya OneDrive hesabınıza <strong>bağlanmaz</strong> ve buralara dosya yüklemez. Sistem dosya
+  seçici üzerinden bu uygulamalardan bir PDF içe aktarabilirsiniz; bu işlem tamamen cihazınızda,
+  işletim sisteminin kendi arayüzüyle gerçekleşir.</p>
+
+  <h2>5. Çocukların gizliliği</h2>
+  <p>Doqora çocuklara yönelik bir uygulama değildir ve bilerek 13 yaş altındaki kişilerden veri toplamaz.</p>
+
+  <h2>6. Haklarınız</h2>
+  <p>Belgeleriniz cihazınızda olduğu için bunları istediğiniz zaman uygulama içinden veya cihazınızın
+  dosya yöneticisinden silebilirsiniz. Reklam kimliğinizi cihaz ayarlarından sıfırlayabilir veya
+  kişiselleştirilmiş reklamları kapatabilirsiniz (Android: Ayarlar → Google → Reklamlar; iOS: Ayarlar →
+  Gizlilik ve Güvenlik → İzleme). Satın alma kayıtlarınızın silinmesini talep etmek için bizimle
+  iletişime geçebilirsiniz.</p>
+
+  <h2>7. Değişiklikler</h2>
+  <p>Bu politika güncellenirse bu sayfadaki "Son güncelleme" tarihi değişir. Önemli değişikliklerde
+  uygulama üzerinden bilgilendirme yapılır.</p>
+
+  <h2>8. İletişim</h2>
+  <p>Gizlilikle ilgili soru ve talepleriniz için:
+    <a href="mailto:fahreddinsevindir@gmail.com">fahreddinsevindir@gmail.com</a></p>
+
+  <!-- ============ ENGLISH ============ -->
+  <section class="en">
+    <h1 style="font-size:1.4rem">Doqora — Privacy Policy (English)</h1>
+    <p class="updated">Last updated: 25 August 2026</p>
+
+    <div class="lede">
+      <p><strong>In short:</strong> Doqora does not upload your documents to our servers. The PDFs you open,
+      the pages you scan, the forms you fill, the signatures you draw and the text extracted by OCR are
+      processed <strong>entirely on your device</strong> and stay there. Doqora has no server that can
+      access your documents.</p>
+    </div>
+
+    <h2>1. Data that stays on your device</h2>
+    <p>The following is stored only in your device's local storage and is never transmitted:</p>
+    <ul>
+      <li>Every PDF you open, create or edit</li>
+      <li>Images you capture with the camera and the PDFs produced from them</li>
+      <li>OCR results — text recognition runs fully on-device using Google ML Kit's bundled model;
+          your images are never sent to any server for recognition</li>
+      <li>Signatures you draw or type</li>
+      <li>Text you enter into form fields</li>
+      <li>A PIN you set on a document — the PIN itself is not stored, only a non-reversible salted
+          SHA-256 hash, kept on the device</li>
+      <li>Your recent-files list, language preference and theme setting</li>
+    </ul>
+    <p>Uninstalling the app removes this local data from your device.</p>
+
+    <h2>2. Third-party services</h2>
+    <p>Doqora itself collects no data, but the app uses the following services for advertising and
+    purchase verification. They process data under their own privacy policies:</p>
+    <table>
+      <thead><tr><th>Service</th><th>Purpose</th><th>Data processed</th></tr></thead>
+      <tbody>
+        <tr><td><strong>Google AdMob</strong></td><td>Ads in the free version</td>
+            <td>Advertising ID (AAID/IDFA), device and OS information, IP address and approximate location
+                derived from it, ad impression/interaction events</td></tr>
+        <tr><td><strong>RevenueCat</strong></td><td>Subscription and purchase verification</td>
+            <td>Anonymous app user ID, purchase and entitlement state, product/price information,
+                device and platform information</td></tr>
+        <tr><td><strong>Google Play Billing / App Store</strong></td><td>Processing the payment</td>
+            <td>Payments are handled by the respective store; Doqora never sees or stores your card details</td></tr>
+      </tbody>
+    </table>
+
+    <h2>3. Permissions</h2>
+    <ul>
+      <li><strong>Camera</strong> — only while you use the document scanner, to turn a paper document into
+          a PDF. Camera images are never uploaded.</li>
+      <li><strong>Add to Photos (iOS)</strong> — only when you choose to save a scanned document to your
+          photo library.</li>
+      <li><strong>Internet</strong> — for advertising and purchase verification. It is not used for your
+          documents.</li>
+    </ul>
+    <p>Doqora does not scan other files on your device; it accesses only documents you deliberately pick
+    through the system file picker, plus the files it creates itself.</p>
+
+    <h2>4. Cloud services</h2>
+    <p>The "Cloud Accounts" screen in the app is informational only. Doqora does <strong>not</strong> connect
+    to your Google Drive, Dropbox or OneDrive account and does not upload files to them. You may import a
+    PDF from those apps through the system file picker; that happens entirely on your device via the
+    operating system's own interface.</p>
+
+    <h2>5. Children's privacy</h2>
+    <p>Doqora is not directed at children and does not knowingly collect data from anyone under 13.</p>
+
+    <h2>6. Your rights</h2>
+    <p>Because your documents live on your device, you can delete them at any time from within the app or
+    your device's file manager. You can reset your advertising ID or opt out of personalised ads in your
+    device settings (Android: Settings → Google → Ads; iOS: Settings → Privacy &amp; Security → Tracking).
+    Contact us to request deletion of your purchase records.</p>
+
+    <h2>7. Changes</h2>
+    <p>If this policy changes, the "Last updated" date on this page will change. Significant changes will
+    be communicated in the app.</p>
+
+    <h2>8. Contact</h2>
+    <p>For privacy questions or requests:
+      <a href="mailto:fahreddinsevindir@gmail.com">fahreddinsevindir@gmail.com</a></p>
+  </section>
+
+  <footer>
+    Doqora · com.doqora.doqora · <a href="mailto:fahreddinsevindir@gmail.com">fahreddinsevindir@gmail.com</a>
+  </footer>
+</div>
+</body>
+</html>
