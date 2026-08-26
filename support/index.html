@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Doqora — Destek</title>
+<style>
+  :root{
+    --ink:#1b1720; --muted:#5d5567; --line:#e6e0ec;
+    --accent:#8156C0; --bg:#ffffff; --panel:#faf8fc;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --ink:#ece8f0; --muted:#a79fb2; --line:#2e2836;
+           --accent:#b491e6; --bg:#141118; --panel:#1c1823; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:720px;margin:0 auto;padding:48px 24px 80px}
+  header{display:flex;align-items:center;gap:14px;margin-bottom:8px}
+  .mark{
+    width:46px;height:46px;border-radius:12px;background:var(--accent);
+    display:grid;place-items:center;flex:none;
+  }
+  .mark svg{display:block}
+  h1{font-size:1.65rem;line-height:1.25;margin:0;letter-spacing:-.02em}
+  .sub{color:var(--muted);font-size:.94rem;margin:2px 0 0}
+  h2{font-size:1.1rem;margin:34px 0 10px;letter-spacing:-.01em}
+  p{margin:0 0 12px}
+  ul{margin:0 0 12px;padding-left:20px}
+  li{margin:0 0 7px}
+  .lede{
+    background:var(--panel);border:1px solid var(--line);border-radius:12px;
+    padding:16px 18px;margin:0 0 8px;
+  }
+  .lede p:last-child{margin-bottom:0}
+  .faq{border:1px solid var(--line);border-radius:12px;overflow:hidden;margin:0 0 8px}
+  .faq details{border-bottom:1px solid var(--line)}
+  .faq details:last-child{border-bottom:none}
+  .faq summary{
+    cursor:pointer;padding:14px 18px;font-weight:600;list-style:none;
+    display:flex;align-items:center;justify-content:space-between;gap:12px;
+  }
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";color:var(--accent);font-size:1.2rem;flex:none}
+  .faq details[open] summary::after{content:"–"}
+  .faq .a{padding:0 18px 16px;color:var(--muted)}
+  .faq .a p{margin:0}
+  a{color:var(--accent)}
+  .btn{
+    display:inline-block;background:var(--accent);color:#fff;text-decoration:none;
+    padding:11px 20px;border-radius:10px;font-weight:600;font-size:.95rem;
+  }
+  code{background:var(--panel);border:1px solid var(--line);border-radius:5px;padding:1px 5px;font-size:.88em}
+  footer{margin-top:44px;padding-top:18px;border-top:1px solid var(--line);color:var(--muted);font-size:.88rem}
+  .en{margin-top:64px;padding-top:28px;border-top:2px solid var(--line)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="mark" aria-hidden="true">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+        <path d="M5 2h9l5 5v15H5z" fill="#fff"/>
+        <path d="M14 2l5 5h-5z" fill="#d9c8ee"/>
+        <rect x="8" y="11" width="8" height="1.6" rx=".8" fill="#8156C0"/>
+        <rect x="8" y="14.4" width="8" height="1.6" rx=".8" fill="#8156C0"/>
+        <rect x="8" y="17.8" width="5" height="1.6" rx=".8" fill="#8156C0"/>
+      </svg>
+    </div>
+    <div>
+      <h1>Doqora — Destek</h1>
+      <p class="sub">PDF görüntüleme, doldurma, imzalama ve tarama uygulaması</p>
+    </div>
+  </header>
+
+  <div class="lede">
+    <p>Bir sorunla mı karşılaştın veya bir öneriniz mi var? Aşağıda sık sorulan sorulara bakabilir,
+    ya da doğrudan bize yazabilirsin — genellikle 1-2 iş günü içinde dönüş yapıyoruz.</p>
+  </div>
+
+  <h2>Sık sorulan sorular</h2>
+  <div class="faq">
+    <details open>
+      <summary>Belgelerim bir sunucuya yükleniyor mu?</summary>
+      <div class="a"><p>Hayır. Açtığın, taradığın veya düzenlediğin tüm PDF'ler yalnızca cihazında işlenir
+      ve cihazında kalır. Detaylar için <a href="../">Gizlilik Politikası</a> sayfasına bakabilirsin.</p></div>
+    </details>
+    <details>
+      <summary>Taradığım belge bulanık veya eksik çıkıyor</summary>
+      <div class="a"><p>Tarama ekranında belgeyi düz bir zeminde, iyi ışıklandırılmış bir ortamda ve kameraya
+      paralel tutmayı dene. Kenar algılama otomatik çalışır; sonucu beğenmezsen kenarları elle
+      düzeltebilir veya sayfayı yeniden tarayabilirsin.</p></div>
+    </details>
+    <details>
+      <summary>OCR (metin tanıma) çalışmıyor veya yanlış metin çıkarıyor</summary>
+      <div class="a"><p>Metin tanıma tamamen cihaz üzerinde çalışır ve internet gerektirmez. Taranan
+      görüntünün net ve okunaklı olması doğruluğu doğrudan etkiler; düşük çözünürlüklü veya eğik
+      taramalarda hata payı artabilir.</p></div>
+    </details>
+    <details>
+      <summary>Abonelik satın aldım ama uygulama fark etmiyor</summary>
+      <div class="a"><p>Cihazını yeniden başlatmayı ve uygulamayı kapatıp tekrar açmayı dene. Sorun
+      devam ederse satın alma tarihini ve kullandığın mağaza hesabını (Apple ID / Google hesabı)
+      belirterek bize yaz, satın alımını kontrol edelim.</p></div>
+    </details>
+    <details>
+      <summary>Aboneliğimi nasıl iptal ederim?</summary>
+      <div class="a"><p>Abonelikler Apple veya Google hesabın üzerinden yönetilir: iOS'ta
+      Ayarlar → [Adın] → Abonelikler, Android'de Play Store → Profil → Ödemeler ve abonelikler.
+      Doqora üzerinden doğrudan iptal edilemez.</p></div>
+    </details>
+    <details>
+      <summary>Belgeme koyduğum PIN'i unuttum</summary>
+      <div class="a"><p>PIN'in kendisi hiçbir yerde saklanmadığı için (yalnızca geri döndürülemeyen bir
+      özeti tutulur) ne biz ne de uygulama bunu senin için kurtarabilir. Belgeye yalnızca doğru PIN ile
+      erişilebilir.</p></div>
+    </details>
+    <details>
+      <summary>Bir özellik önerim var / hata bildirmek istiyorum</summary>
+      <div class="a"><p>Aşağıdaki adresten bize yaz — cihaz modelini, işletim sistemi sürümünü ve
+      mümkünse ekran görüntüsünü eklersen sorunu çok daha hızlı çözeriz.</p></div>
+    </details>
+  </div>
+
+  <h2>Bize ulaş</h2>
+  <p>Yukarıdaki sorulardan biri sorununu çözmediyse, doğrudan yazabilirsin:</p>
+  <p><a class="btn" href="mailto:fahreddinsevindir@gmail.com">fahreddinsevindir@gmail.com</a></p>
+
+  <!-- ============ ENGLISH ============ -->
+  <section class="en">
+    <h1 style="font-size:1.4rem">Doqora — Support (English)</h1>
+
+    <div class="lede">
+      <p>Running into an issue or have a suggestion? Check the FAQ below, or write to us directly —
+      we usually reply within 1-2 business days.</p>
+    </div>
+
+    <h2>Frequently asked questions</h2>
+    <div class="faq">
+      <details open>
+        <summary>Are my documents uploaded to a server?</summary>
+        <div class="a"><p>No. Every PDF you open, scan or edit is processed entirely on your device and
+        stays there. See the <a href="../">Privacy Policy</a> for details.</p></div>
+      </details>
+      <details>
+        <summary>My scanned document looks blurry or incomplete</summary>
+        <div class="a"><p>Try scanning on a flat surface, in good lighting, holding the camera parallel to
+        the page. Edge detection is automatic, but you can adjust the corners manually or rescan the
+        page if you're not happy with the result.</p></div>
+      </details>
+      <details>
+        <summary>OCR (text recognition) isn't working or extracts the wrong text</summary>
+        <div class="a"><p>Text recognition runs entirely on-device and needs no internet connection.
+        Accuracy depends on how sharp and legible the scanned image is; low-resolution or skewed
+        scans can increase the error rate.</p></div>
+      </details>
+      <details>
+        <summary>I purchased a subscription but the app doesn't recognize it</summary>
+        <div class="a"><p>Try restarting your device and relaunching the app. If the issue persists,
+        email us with the purchase date and the store account (Apple ID / Google account) you used
+        so we can look into it.</p></div>
+      </details>
+      <details>
+        <summary>How do I cancel my subscription?</summary>
+        <div class="a"><p>Subscriptions are managed through your Apple or Google account: on iOS,
+        Settings → [Your Name] → Subscriptions; on Android, Play Store → Profile → Payments &amp;
+        subscriptions. Doqora cannot cancel it directly.</p></div>
+      </details>
+      <details>
+        <summary>I forgot the PIN I set on a document</summary>
+        <div class="a"><p>Since the PIN itself is never stored (only a non-reversible hash is kept),
+        neither we nor the app can recover it for you. The document can only be opened with the
+        correct PIN.</p></div>
+      </details>
+      <details>
+        <summary>I have a feature request or want to report a bug</summary>
+        <div class="a"><p>Write to us at the address below — including your device model, OS version,
+        and a screenshot if possible helps us resolve things much faster.</p></div>
+      </details>
+    </div>
+
+    <h2>Contact us</h2>
+    <p>If the FAQ above didn't solve your issue, reach out directly:</p>
+    <p><a class="btn" href="mailto:fahreddinsevindir@gmail.com">fahreddinsevindir@gmail.com</a></p>
+  </section>
+
+  <footer>
+    Doqora · com.doqora.doqora · <a href="mailto:fahreddinsevindir@gmail.com">fahreddinsevindir@gmail.com</a>
+  </footer>
+</div>
+</body>
+</html>
