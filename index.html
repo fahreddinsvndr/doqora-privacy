@@ -66,7 +66,7 @@
     </div>
   </header>
 
-  <p class="updated">Son güncelleme: 25 Ağustos 2026</p>
+  <p class="updated">Son güncelleme: 14 Eylül 2026</p>
 
   <div class="lede">
     <p><strong>Kısaca:</strong> Doqora belgelerinizi sunucularımıza yüklemez. Açtığınız PDF'ler, taradığınız
@@ -90,8 +90,9 @@
   <p>Uygulamayı kaldırdığınızda bu yerel veriler de cihazınızdan silinir.</p>
 
   <h2>2. Üçüncü taraf hizmetleri</h2>
-  <p>Doqora'nın kendisi veri toplamaz; ancak uygulama, reklam gösterimi ve satın alma doğrulaması için
-  aşağıdaki hizmetleri kullanır. Bu hizmetler kendi gizlilik politikaları kapsamında veri işler:</p>
+  <p>Doqora belgelerinizi hiçbir koşulda toplamaz. Uygulama; reklam gösterimi, satın alma doğrulaması ve
+  anonim kullanım/hata istatistikleri için aşağıdaki hizmetleri kullanır. Bu hizmetler kendi gizlilik
+  politikaları kapsamında veri işler:</p>
 
   <table>
     <thead>
@@ -111,6 +112,24 @@
             cihaz ve platform bilgisi</td>
       </tr>
       <tr>
+        <td><strong>Google Firebase Analytics</strong></td>
+        <td>Anonim kullanım istatistikleri — hangi ekranların kullanıldığını ve nerede sorun çıktığını
+            görüp uygulamayı iyileştirmek</td>
+        <td>Açılan ekranlar, kullanılan araçlar ve işlemlerin başarılı/başarısız sonucu (ör. "belge
+            kaydedildi", "içe aktarma başarısız"), uygulama sürümü, cihaz modeli, işletim sistemi sürümü,
+            dil, IP adresinden türetilen yaklaşık ülke/şehir ve rastgele bir kurulum kimliği. Veriler adınıza
+            veya bir hesaba bağlı değildir. <strong>Dosya adları, belge başlıkları, belge içerikleri, arama
+            metinleri, notlar, imzalar ve PIN'ler asla gönderilmez.</strong> Reklam kimliği bu amaçla okunmaz
+            ve bu veriler reklam kişiselleştirmesinde kullanılmaz.</td>
+      </tr>
+      <tr>
+        <td><strong>Google Firebase Crashlytics</strong></td>
+        <td>Çökme ve hata raporları</td>
+        <td>Çökme ya da hata anındaki teknik yığın izi, cihaz ve işletim sistemi bilgisi, rastgele kurulum
+            kimliği ve hatadan hemen önceki uygulama içi olaylar (yukarıdakiyle aynı kapsamda; hata
+            metinlerindeki dosya yolları ve adları gönderilmeden önce silinir)</td>
+      </tr>
+      <tr>
         <td><strong>Google Play Faturalandırma / App Store</strong></td>
         <td>Ödemenin gerçekleştirilmesi</td>
         <td>Ödeme işlemi ilgili mağaza tarafından yürütülür; Doqora kart bilgilerinizi görmez veya saklamaz</td>
@@ -120,8 +139,13 @@
 
   <p>İlgili politikalar:
     <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Gizlilik Politikası</a> ·
-    <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Gizlilik Politikası</a>
+    <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Gizlilik Politikası</a> ·
+    <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Gizlilik ve Güvenlik</a>
   </p>
+  <p>Anonim kullanım ve hata istatistiklerini istediğiniz zaman uygulamada <strong>Ayarlar → Bulut &amp;
+  Gizlilik → Anonim kullanım istatistikleri</strong> anahtarından kapatabilirsiniz; kapalıyken Firebase
+  Analytics'e ve Crashlytics'e hiçbir veri gönderilmez. Avrupa Ekonomik Alanı, Birleşik Krallık ve
+  İsviçre'de bu veriler, onay verene kadar tanımlayıcı olmadan toplanır.</p>
 
   <h2>3. İzinler ve neden isteniyor</h2>
   <ul>
@@ -129,8 +153,8 @@
         dönüştürmek için. Kamera görüntüleri hiçbir yere yüklenmez.</li>
     <li><strong>Fotoğraflara ekleme (iOS)</strong> — yalnızca taradığınız belgeyi galerinize kaydetmek
         istediğinizde.</li>
-    <li><strong>İnternet</strong> — reklam gösterimi ve satın alma doğrulaması için. Belgeleriniz için
-        kullanılmaz.</li>
+    <li><strong>İnternet</strong> — reklam gösterimi, satın alma doğrulaması ve anonim kullanım/hata
+        istatistikleri için. Belgeleriniz için kullanılmaz.</li>
   </ul>
   <p>Doqora cihazınızdaki diğer dosyaları taramaz; yalnızca sizin sistem dosya seçiciyle bilerek
   seçtiğiniz belgelere ve kendi ürettiği dosyalara erişir.</p>
@@ -148,8 +172,9 @@
   <p>Belgeleriniz cihazınızda olduğu için bunları istediğiniz zaman uygulama içinden veya cihazınızın
   dosya yöneticisinden silebilirsiniz. Reklam kimliğinizi cihaz ayarlarından sıfırlayabilir veya
   kişiselleştirilmiş reklamları kapatabilirsiniz (Android: Ayarlar → Google → Reklamlar; iOS: Ayarlar →
-  Gizlilik ve Güvenlik → İzleme). Satın alma kayıtlarınızın silinmesini talep etmek için bizimle
-  iletişime geçebilirsiniz.</p>
+  Gizlilik ve Güvenlik → İzleme). Anonim kullanım ve hata istatistiklerini uygulamanın Ayarlar ekranından
+  kapatabilirsiniz. Satın alma kayıtlarınızın silinmesini talep etmek için bizimle iletişime
+  geçebilirsiniz.</p>
 
   <h2>7. Değişiklikler</h2>
   <p>Bu politika güncellenirse bu sayfadaki "Son güncelleme" tarihi değişir. Önemli değişikliklerde
@@ -162,7 +187,7 @@
   <!-- ============ ENGLISH ============ -->
   <section class="en">
     <h1 style="font-size:1.4rem">Doqora — Privacy Policy (English)</h1>
-    <p class="updated">Last updated: 25 August 2026</p>
+    <p class="updated">Last updated: 14 September 2026</p>
 
     <div class="lede">
       <p><strong>In short:</strong> Doqora does not upload your documents to our servers. The PDFs you open,
@@ -187,8 +212,8 @@
     <p>Uninstalling the app removes this local data from your device.</p>
 
     <h2>2. Third-party services</h2>
-    <p>Doqora itself collects no data, but the app uses the following services for advertising and
-    purchase verification. They process data under their own privacy policies:</p>
+    <p>Doqora never collects your documents. The app uses the following services for advertising, purchase
+    verification and anonymous usage/crash statistics. They process data under their own privacy policies:</p>
     <table>
       <thead><tr><th>Service</th><th>Purpose</th><th>Data processed</th></tr></thead>
       <tbody>
@@ -198,10 +223,31 @@
         <tr><td><strong>RevenueCat</strong></td><td>Subscription and purchase verification</td>
             <td>Anonymous app user ID, purchase and entitlement state, product/price information,
                 device and platform information</td></tr>
+        <tr><td><strong>Google Firebase Analytics</strong></td><td>Anonymous usage statistics — to see which
+                screens are used and where things go wrong, so the app can be improved</td>
+            <td>Screens opened, tools used and whether an action succeeded or failed (e.g. "document saved",
+                "import failed"), app version, device model, OS version, language, approximate country/city
+                derived from the IP address, and a random installation ID. The data is not tied to your name
+                or an account. <strong>File names, document titles, document contents, search terms, notes,
+                signatures and PINs are never sent.</strong> The advertising ID is not read for this purpose
+                and this data is not used for ad personalisation.</td></tr>
+        <tr><td><strong>Google Firebase Crashlytics</strong></td><td>Crash and error reports</td>
+            <td>The technical stack trace at the time of a crash or error, device and OS information, a random
+                installation ID and the in-app events just before it (same scope as above; file paths and names
+                in error messages are removed before sending)</td></tr>
         <tr><td><strong>Google Play Billing / App Store</strong></td><td>Processing the payment</td>
             <td>Payments are handled by the respective store; Doqora never sees or stores your card details</td></tr>
       </tbody>
     </table>
+    <p>Related policies:
+      <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a> ·
+      <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a> ·
+      <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy and Security</a>
+    </p>
+    <p>You can turn anonymous usage and crash statistics off at any time in the app under <strong>Settings →
+    Cloud &amp; Privacy → Anonymous usage statistics</strong>; while it is off, nothing is sent to Firebase
+    Analytics or Crashlytics. In the European Economic Area, the United Kingdom and Switzerland this data is
+    collected without identifiers until you give consent.</p>
 
     <h2>3. Permissions</h2>
     <ul>
@@ -209,8 +255,8 @@
           a PDF. Camera images are never uploaded.</li>
       <li><strong>Add to Photos (iOS)</strong> — only when you choose to save a scanned document to your
           photo library.</li>
-      <li><strong>Internet</strong> — for advertising and purchase verification. It is not used for your
-          documents.</li>
+      <li><strong>Internet</strong> — for advertising, purchase verification and anonymous usage/crash
+          statistics. It is not used for your documents.</li>
     </ul>
     <p>Doqora does not scan other files on your device; it accesses only documents you deliberately pick
     through the system file picker, plus the files it creates itself.</p>
@@ -228,7 +274,8 @@
     <p>Because your documents live on your device, you can delete them at any time from within the app or
     your device's file manager. You can reset your advertising ID or opt out of personalised ads in your
     device settings (Android: Settings → Google → Ads; iOS: Settings → Privacy &amp; Security → Tracking).
-    Contact us to request deletion of your purchase records.</p>
+    You can turn anonymous usage and crash statistics off from the app's Settings screen. Contact us to
+    request deletion of your purchase records.</p>
 
     <h2>7. Changes</h2>
     <p>If this policy changes, the "Last updated" date on this page will change. Significant changes will
